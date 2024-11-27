@@ -1,0 +1,15 @@
+schema_version: "1"
+input:
+  image:
+    type: image
+    description: "Input image to condition the generation"
+  text:
+    type: string
+    description: "Text prompt for the generation"
+    default: "Describe the image"
+output:
+  type: image
+  description: "Generated image"
+command:
+  - python
+  - predict.py
